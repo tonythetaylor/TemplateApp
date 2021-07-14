@@ -109,7 +109,7 @@ const RegisterScreen = (props) => {
       <View
         style={{
           flex: 1,
-          backgroundColor: '#000',
+          backgroundColor: '#4c669f',
           justifyContent: 'center',
         }}>
         <Image

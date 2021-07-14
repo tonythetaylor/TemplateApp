@@ -15,6 +15,8 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 
+import { LinearGradient } from 'expo-linear-gradient';
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import Loader from './components/Loader';
@@ -80,6 +82,12 @@ const LoginScreen = ({navigation}) => {
 
   return (
     <View style={styles.mainBody}>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['#4c669f', '#3b5998', '#192f6a']}
+        start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
+        style={styles.background}
+      />
       <Loader loading={loading} />
       <ScrollView
         keyboardShouldPersistTaps="handled"
@@ -165,7 +173,7 @@ const styles = StyleSheet.create({
   mainBody: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#000',
+    backgroundColor: '#4c669f',
     alignContent: 'center',
   },
   SectionStyle: {
@@ -175,6 +183,13 @@ const styles = StyleSheet.create({
     marginLeft: 35,
     marginRight: 35,
     margin: 10,
+  },
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: '100%',
   },
   buttonStyle: {
     backgroundColor: '#7DE24E',

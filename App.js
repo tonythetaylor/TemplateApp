@@ -16,8 +16,6 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import DrawerNavigationRoutes from './screens/DrawerNavigationRoutes';
 import NewStatus from './screens/NewStatus';
-import Feed from './screens/Feed';
-import FeedScreen from './screens/DrawerScreens/FeedScreen'
 import Thread from './screens/Thread';
 
 import { client } from './graphql/client';
@@ -39,7 +37,7 @@ const Auth = () => {
         options={{
           title: 'Register', //Set Header Title
           headerStyle: {
-            backgroundColor: '#000', //Set Header color
+            backgroundColor: '#4c669f', //Set Header color
           },
           headerTintColor: '#fff', //Set Header text color
           headerTitleStyle: {
@@ -83,7 +81,7 @@ const App = () => {
           options={{
             title: 'Thread', //Set Header Title
             headerStyle: {
-              backgroundColor: '#000', //Set Header color
+              backgroundColor: '#4c669f', //Set Header color
             },
             headerTintColor: '#fff', //Set Header text color
             headerTitleStyle: {
@@ -97,7 +95,7 @@ const App = () => {
           options={{
             title: 'New Post', //Set Header Title
             headerStyle: {
-              backgroundColor: '#000', //Set Header color
+              backgroundColor: '#4c669f', //Set Header color
             },
             headerTintColor: '#fff', //Set Header text color
             headerTitleStyle: {
