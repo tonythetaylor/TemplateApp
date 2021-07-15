@@ -13,6 +13,7 @@ import {
   Keyboard,
   TouchableOpacity,
   KeyboardAvoidingView,
+  StatusBar,
 } from 'react-native';
 
 import { LinearGradient } from 'expo-linear-gradient';
@@ -82,6 +83,7 @@ const LoginScreen = ({navigation}) => {
 
   return (
     <View style={styles.mainBody}>
+      <StatusBar backgroundColor="aqua" barStyle="light-content" />
       <LinearGradient
         // Background Linear Gradient
         colors={['#4c669f', '#3b5998', '#192f6a']}
