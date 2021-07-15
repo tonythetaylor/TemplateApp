@@ -15,6 +15,7 @@ import SplashScreen from './screens/SplashScreen';
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import DrawerNavigationRoutes from './screens/DrawerNavigationRoutes';
+import BottomTabHome from './screens/BottomTabHome';
 import NewStatus from './screens/NewStatus';
 import Thread from './screens/Thread';
 
