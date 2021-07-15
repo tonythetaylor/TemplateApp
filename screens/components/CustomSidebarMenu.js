@@ -23,7 +23,7 @@ const CustomSidebarMenu = (props) => {
           </Text>
         </View>
         <Text style={stylesSidebar.profileHeaderText}>
-          AboutReact
+          App Template
         </Text>
       </View>
       <View style={stylesSidebar.profileHeaderLine} />

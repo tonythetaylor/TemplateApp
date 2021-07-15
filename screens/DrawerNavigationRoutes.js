@@ -16,6 +16,8 @@ import NewStatus from './NewStatus'
 import Thread from './Thread';
 import CustomSidebarMenu from './components/CustomSidebarMenu';
 import NavigationDrawerHeader from './components/NavigationDrawerHeader';
+import BottomTabHome from './BottomTabHome'
+import BottomTabFeed from './BottomTabFeed'
 
 import { Button } from './components/Button';
 
@@ -105,7 +107,7 @@ const feedScreenStack = ({route, navigation}) => {
 
 const DrawerNavigatorRoutes = (props) => {
   return (
-    <Drawer.Navigator
+    <Drawer.Navigator initialRouteName="Home"
       drawerContentOptions={{
         activeTintColor: '#cee1f2',
         color: '#cee1f2',
@@ -116,21 +118,18 @@ const DrawerNavigatorRoutes = (props) => {
       }}
       screenOptions={{headerShown: false}}
       drawerContent={CustomSidebarMenu}>
-      <Drawer.Screen
-        name="homeScreenStack"
-        options={{drawerLabel: 'Home Screen'}}
-        component={homeScreenStack}
-      />
-      <Drawer.Screen
+      <Drawer.Screen name="Home" component={BottomTabHome}/>
+      <Drawer.Screen name="Feed" component={BottomTabFeed}/>
+       <Drawer.Screen
         name="settingScreenStack"
-        options={{drawerLabel: 'Setting Screen'}}
+        options={{drawerLabel: 'Setting'}}
         component={settingScreenStack}
       />
-      <Drawer.Screen
+      {/*<Drawer.Screen
         name="feedScreenStack"
-        options={{drawerLabel: 'Feed Screen'}}
+        options={{drawerLabel: 'Feed'}}
         component={feedScreenStack}
-      />
+      /> */}
     </Drawer.Navigator>
   );
 };
