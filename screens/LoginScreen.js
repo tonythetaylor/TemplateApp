@@ -104,7 +104,7 @@ const LoginScreen = ({navigation}) => {
               <Image
                 source={require('../Image/apptemplate.png')}
                 style={{
-                  width: '50%',
+                  width: '100%',
                   height: 100,
                   resizeMode: 'contain',
                   margin: 30,
